@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 - 简历</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 50px;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.2);
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .skill-badge {
+            margin-right: 5px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .footer {
+            padding: 40px 0;
+            background-color: #343a40;
+            color: #adb5bd;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 头部展示区 -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <img src="https://via.placeholder.com/180" class="rounded-circle profile-img mb-4" alt="头像">
+            <h1 class="display-4 fw-bold">张小明</h1>
+            <p class="lead">全栈开发工程师 / UI设计师 / 终身学习者</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-outline-light px-4 me-2">联系我</a>
+                <a href="#" class="btn btn-light px-4">下载简历</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- 左侧：基本信息 -->
+            <div class="col-lg-4">
+                <div class="card p-4">
+                    <h3 class="section-title h5 text-primary">个人信息</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><strong>📍 现居：</strong> 上海市浦东新区</li>
+                        <li class="mb-3"><strong>📧 邮箱：</strong> xiaoming.zhang@example.com</li>
+                        <li class="mb-3"><strong>📞 电话：</strong> +86 138-0000-0000</li>
+                        <li class="mb-3"><strong>🔗 网站：</strong> www.xiaoming-blog.com</li>
+                    </ul>
+                </div>
+
+                <div class="card p-4">
+                    <h3 class="section-title h5 text-primary">专业技能</h3>
+                    <div class="mt-2">
+                        <span class="badge bg-primary skill-badge">HTML5/CSS3</span>
+                        <span class="badge bg-primary skill-badge">JavaScript (ES6+)</span>
+                        <span class="badge bg-primary skill-badge">React.js</span>
+                        <span class="badge bg-primary skill-badge">Node.js</span>
+                        <span class="badge bg-primary skill-badge">Python</span>
+                        <span class="badge bg-primary skill-badge">MySQL</span>
+                        <span class="badge bg-primary skill-badge">Docker</span>
+                        <span class="badge bg-info skill-badge">Bootstrap 5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：详细背景 -->
+            <div class="col-lg-8">
+                <div class="card p-4">
+                    <h3 class="section-title h5 text-primary">自我评价</h3>
+                    <p class="text-muted" style="line-height: 1.8;">
+                        拥有5年前端开发经验，热衷于构建美观且高性能的用户界面。曾参与过多个大型互联网项目，具备从需求分析、架构设计到上线维护的全流程经验。
+                        擅长解决复杂的技术难题，具备良好的团队沟通协作能力和快速学习能力。
+                    </p>
+                </div>
+
+                <div class="card p-4">
+                    <h3 class="section-title h5 text-primary">工作经历</h3>
+                    <div class="timeline">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-1 fw-bold">某互联网科技公司 - 高级前端工程师</h5>
+                                <span class="badge bg-light text-dark">2020 - 至今</span>
+                            </div>
+                            <p class="text-muted mb-2">负责核心电商平台的前端重构与性能优化，将页面加载速度提升了40%。</p>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-1 fw-bold">某初创工作室 - 全栈开发</h5>
+                                <span class="badge bg-light text-dark">2018 - 2020</span>
+                            </div>
+                            <p class="text-muted mb-2">负责公司内部CRM系统的开发，独立完成从数据库设计到前端页面的实现。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-4">
+                    <h3 class="section-title h5 text-primary">教育背景</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1 fw-bold">某重点大学 - 计算机科学与技术</h5>
+                            <p class="text-muted mb-0">学士学位</p>
+                        </div>
+                        <span class="badge bg-light text-dark">2014 - 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">© 2024 张小明的个人主页. 使用 Bootstrap 5 构建.</p>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap JS (Popper.js 是包含在里面的) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
